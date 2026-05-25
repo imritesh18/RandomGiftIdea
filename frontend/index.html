@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Gift Idea Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-radial"></div>
+  <div class="app">
+    <h1>Random Gift Idea Generator 🎁</h1>
+    <form id="filterForm">
+      <select id="occasion">
+        <option value="">-- Select Occasion --</option>
+        <option value="Birthday">Birthday</option>
+        <option value="Anniversary">Anniversary</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Wedding">Wedding</option>
+        <option value="Baby Shower">Baby Shower</option>
+        <option value="Holiday">Holiday</option>
+        <option value="Retirement">Retirement</option>
+        <option value="Housewarming">Housewarming</option>
+      </select>
+
+      <select id="ageGroup">
+        <option value="">-- Select Age Group --</option>
+        <option value="Kids">Kids</option>
+        <option value="Teen">Teen</option>
+        <option value="Adult">Adult</option>
+        <option value="Senior">Senior</option>
+      </select>
+
+      <select id="gender">
+        <option value="">-- Select Gender --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Any">Any</option>
+      </select>
+
+      <label><input type="checkbox" id="budgetToggle"> Budget Friendly</label>
+
+      <button type="submit">Generate Gift</button>
+    </form>
+
+    <div id="giftResults" class="card-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
